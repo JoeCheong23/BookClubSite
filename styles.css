@@ -3,7 +3,7 @@
 }
 
 header {
-    background: #F5D033; padding: 0px; margin: 0px; display: flex; flex-wrap: wrap; justify-content: space-between; 
+    background: #F5D033; padding: 0px; margin: 0px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
 }
 
 .navigation-bar {
@@ -11,7 +11,7 @@ header {
 }
 
 a {
-    margin: 10px; font-weight: bold; font-family: Verdana; color:black; text-decoration: none;
+    margin: 15px; font-weight: bold; font-family: Verdana; color:black; text-decoration: none;
 }
 
 a.current {
@@ -19,5 +19,17 @@ a.current {
 }
 
 #logo {
-    width: 300px; height: 100px; overflow: hidden; object-fit: contain;
+    width: 300px; height: 80px; overflow: hidden; object-fit: contain;
+}
+
+#sign-up {
+    color: #F5D033; text-align: center; background-image: url('BookClub.jpg'); background-color: grey; background-blend-mode: multiply; height: 700px; object-fit: cover; background-size: cover;
+}
+
+#sign-up-header {
+    padding-top: 150px; padding-bottom: 100px; background-size: cover; font-size: 100px; font-family: Verdana;
+}
+
+#sign-up-button {
+    background-color: #7e1b1b; color: white; border-radius: 20px; font-size: 70px; padding: 30px; font-family: Verdana;
 }
