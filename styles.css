@@ -56,20 +56,27 @@ header {
 
 #bookclubrego {
     position: fixed; z-index: 2; padding: 20px;  width: 70%; height: 80%; overflow: auto; left: 15%; top: 10%; ;
-    border-radius: 30px; margin: auto; flex-direction: column; justify-content: space-around; 
+    border-radius: 30px; margin: auto; flex-direction: column; justify-content: space-around;
 }
 
+.close-cross {
+    float:right; font-size: 40px; font-weight: bolder; padding-right: 10px; color: grey; 
+}
+
+.close-cross:hover, .close-cross:focus {
+    color:#7e1b1b; cursor:pointer; text-decoration: none;
+}
 
 .form-text-secheader {
- font-family: Verdana;  font-size: 20px; padding-bottom: 5px; 
+ font-family: Verdana;  font-size: 20px; padding-bottom: 5px;
 }
 
 .form-text-label {
-    font-family: Verdana; padding-top: 10px; font-weight: bold; padding-left: 5px; font-size: 15px;;
+    font-family: Verdana; font-weight: bold; margin-left: 3%; margin-right: 3%; font-size: 15px;
 }
 
 .form-text-input {
-    width: 60%; padding: 4px; font-family: Verdana; margin: 5px; display: inline-block; border: 2px solid #ccc; border-radius: 6px; 
+    width: 70%; padding: 4px; margin-left: 3%; margin-right: 3%; margin-top: 5px; font-family: Verdana;  display: inline-block; border: 2px solid #ccc; border-radius: 6px; 
 }
 
 .form-text-input:focus {
@@ -78,6 +85,19 @@ header {
 
 #userDetails {
     padding: 10px; font-family: Verdana; margin: 10px; flex-direction: column;
+}
+
+#addresses {
+    padding: 10px; font-family: Verdana; margin: 10px; flex-direction: column;
+}
+
+#contacts {
+    padding: 10px; font-family: Verdana; margin: 10px; flex-direction: column;
+}
+
+#submit-button {
+    background-color: #7e1b1b; color: white; border-radius: 10px; font-size: 20px; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px;
+    margin: 10px; font-family: Verdana; cursor: pointer; float: left; 
 }
 
 .wrapper {
