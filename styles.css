@@ -76,7 +76,7 @@ header {
 }
 
 .form-text-input {
-    width: 90%; padding: 4px; margin-left: 0%; margin-right: 0%; margin-top: 5px; font-family: Verdana;  display: inline-block; border: 2px solid #ccc; border-radius: 6px; background-color: #e4e4e4;
+    width: 90%; padding: 4px; margin-left: 0%; margin-right: 0%; margin-top: 5px; font-family: Verdana; display: inline-block; border: 2px solid #ccc; border-radius: 6px; background-color: #e4e4e4;
 }
 
 .form-text-input:focus {
