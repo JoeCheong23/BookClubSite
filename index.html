@@ -5,12 +5,14 @@
   <head>
     <title>Book Program Discussion (BPD)</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
   </head>
 
 
 
   <body>
-    
+
+    <!-- Navigation bar and logo header -->
     <header class="custom-background-color">
       <img id="logo" src="BPDLogo.png" alt="Book Program Discussion Logo">
       <div class="navigation-bar">
@@ -24,10 +26,47 @@
       </div>
     </header>
 
+    <!-- Call to action section and registration form button -->
     <div id="sign-up">
       <h1 id="sign-up-header" class="custom-color">Reading is better together</h1>
-      <strong id="sign-up-button" onclick='console.log("clicked")' >Join us today!</strong>
+      <strong id="trigger-modal" onclick='console.log("clicked")' >Join us today</strong>
     </div>
+
+    <div id="modal-grey"></div>
+
+    <div id="bookclubrego" class="custom-background-color">
+      <h1 style="margin-left: 20px; margin-top: 10px;">Registration</h1>
+
+      <div id="userDetails">
+        <h3 class="form-text-secheader ">User Details</h3>
+        <label class="form-text-label" for="gname">Given name: </label><br>
+        <input class="form-text-input" type="text" id="gname"><br>
+        <label class="form-text-label" for="surname">Surname: </label><br>
+        <input class="form-text-input" type="text" id="surname"><br>
+        <label class="form-text-label" for="username">Username: </label><br>
+        <input class="form-text-input" type="text" id="username"><br>
+        <label class="form-text-label" for="gname">Password: </label><br>
+        <input class="form-text-input" type="text" id="password"><br>
+      
+      </div>
+
+
+    </div>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class=" wrapper">
       <div class="content-cards">
@@ -38,13 +77,16 @@
           <strong>News</strong>
           </div>
             <div class="card-content-heading"> 
-             Title 1 
+             Book Fair
             </div>
             <div class="card-content-text"> 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
               in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="card-content-date">
+              Last updated: 13/4/2021
             </div>
         </div>
         </div>
@@ -55,13 +97,16 @@
           <strong>Books</strong>
           </div>
           <div class="card-content-heading">
-          Title 2
+          Old Texts
           </div>
           <div class="card-content-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas 
             ultricies mi eget mauris pharetra et ultrices neque ornare. Vel facilisis volutpat est velit egestas dui id ornare arcu. Gravida cum 
             sociis natoque penatibus et magnis. Faucibus et molestie ac feugiat sed lectus. Consectetur lorem donec massa sapien faucibus. Mattis 
             vulputate enim nulla aliquet porttitor lacus luctus.
+          </div>
+          <div class="card-content-date">
+            Last updated: 20/5/2021
           </div>
         </div>
         </div>

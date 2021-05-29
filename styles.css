@@ -7,7 +7,7 @@
 }
 
 .custom-background-color {
-    background: #F5D033;
+    background: #F5D033; background-color:#F5D033;
 }
 
 header {
@@ -46,8 +46,38 @@ header {
     padding-top: 150px; padding-bottom: 100px; background-size: cover; font-size: 100px; font-family: Verdana;
 }
 
-#sign-up-button {
+#trigger-modal {
     background-color: #7e1b1b; color: white; border-radius: 20px; font-size: 70px; padding: 30px; font-family: Verdana; cursor: pointer;
+}
+
+#modal-grey {
+    position: fixed; z-index: 1; width: 100%; height: 100%; overflow: auto; background-color: rgb(201, 200, 200); left: 0; top: 0; background-color: rgba(0,0,0,0.4);
+}
+
+#bookclubrego {
+    position: fixed; z-index: 2; padding: 20px;  width: 70%; height: 80%; overflow: auto; left: 15%; top: 10%; ;
+    border-radius: 30px; margin: auto; flex-direction: column; justify-content: space-around; 
+}
+
+
+.form-text-secheader {
+ font-family: Verdana;  font-size: 20px; padding-bottom: 5px; 
+}
+
+.form-text-label {
+    font-family: Verdana; padding-top: 10px; font-weight: bold; padding-left: 5px; font-size: 15px;;
+}
+
+.form-text-input {
+    width: 60%; padding: 4px; font-family: Verdana; margin: 5px; display: inline-block; border: 2px solid #ccc; border-radius: 6px; 
+}
+
+.form-text-input:focus {
+    border: 2px solid black; outline: none !important;
+}
+
+#userDetails {
+    padding: 10px; font-family: Verdana; margin: 10px; flex-direction: column;
 }
 
 .wrapper {
@@ -62,22 +92,27 @@ header {
 }
 
 .content-cards .card-internal {
-    border-radius: 25px; height: 400px; padding: 20px; text-align: center; box-shadow: 10px 10px 5px grey; position:relative; 
+    border-radius: 25px; height: auto; padding: 20px; text-align: center; box-shadow: 10px 10px 5px grey; position:relative; 
 }
 
 .content-cards .card-internal .card-title {
-    font-size: 35px; font-family: Tahoma; margin-bottom: 30px; color: #7e1b1b
+    font-size: 35px; font-family: Tahoma; margin-bottom: 30px; color: #7e1b1b; cursor: pointer;
 }
 
 .content-cards .card-internal .card-content-heading {
-    font-size: 25px; font-family: Verdana; margin-left: 20px; margin-right: 20px; margin-bottom: 10px; font-weight: bold; text-align: left;
+    font-size: 25px; font-family: Verdana; margin-left: 20px; margin-right: 20px; margin-bottom: 10px; font-weight: bold; text-align: left; 
 }
 
 .content-cards .card-internal .card-content-text {
-    font-size: 18px; font-family: Verdana; margin-bottom: 10px; margin-left: 20px; margin-right: 20px; text-align:justify; overflow: scroll; overflow-x: hidden; height: 250px; 
+    font-size: 18px; font-family: Verdana; margin-bottom: 15px; margin-left: 20px; margin-right: 20px; text-align:justify; overflow: scroll; overflow-x: hidden; height: 200px; 
     -ms-overflow-style: none; scrollbar-width: none;
+}
+
+.content-cards .card-internal .card-content-date {
+    font-size: 15px; font-family: Verdana; margin-bottom: 10px; margin-left: 20px; margin-right: 20px; text-align:right; color: rgb(39, 44, 53)  ; font-style: italic; height: auto;
 }
 
 .content-cards .card-internal .card-content-text::-webkit-scrollbar {
     display:none;
 }
+
