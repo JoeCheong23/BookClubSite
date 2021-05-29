@@ -1,142 +1,151 @@
 <!DOCTYPE HTML>
 <html lang="en" xml:lang="en">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <head>
-    <title>Book Program Discussion (BPD)</title>
-    <link rel="stylesheet" href="styles.css">
-    
-  </head>
+<head>
+  <title>Book Program Discussion (BPD)</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
 
 
 
-  <body>
+<body>
 
-    <!-- Navigation bar and logo header -->
-    <header class="custom-background-color">
-      <img id="logo" src="BPDLogo.png" alt="Book Program Discussion Logo">
-      <div class="navigation-bar">
-        <a class="nav-link-current" href="url">Home</a>
-        <a class="nav-link" href="url">About</a>
-        <a class="nav-link" href="url">Books</a>
-        <a class="nav-link" href="url">Get Started</a>
-        <a class="nav-link" href="url">News</a>
-        <a class="nav-link" href="url">Members</a>
-        <a class="nav-link" href="url">Login</a>
-      </div>
-    </header>
+  <!-- Navigation bar and logo header -->
+  <header class="custom-background-color">
+    <img id="logo" src="BPDLogo.png" alt="Book Program Discussion Logo">
+    <div class="navigation-bar">
+      <a class="nav-link" style="color: #7c1d1d;" href="url">Home</a>
+      <a class="nav-link" href="url">About</a>
+      <a class="nav-link" href="url">Books</a>
+      <a class="nav-link" href="url">Get Started</a>
+      <a class="nav-link" href="url">News</a>
+      <a class="nav-link" href="url">Members</a>
+      <a class="nav-link-login" href="url">Login</a>
+    </div>
+  </header>
 
-    <!-- Call to action section and registration form button -->
-    <div id="sign-up">
-      <h1 id="sign-up-header" class="custom-color">Reading is better together</h1>
-      <strong id="trigger-modal" onclick="triggerModal()" >Join us today</strong>
+  <!-- Call to action section and registration form button -->
+  <div id="sign-up">
+    <h1 id="sign-up-header" class="custom-color">Reading is better together</h1>
+    <strong id="trigger-modal" onclick="triggerModal()">Join us today</strong>
+  </div>
+
+  <div id="modal-grey"></div>
+
+  <div id="bookclubrego" class="custom-background-color">
+    <span class="close-cross" onClick="closeModal()">&times;</span><br><br>
+    <h1
+      style="margin-top: 10px; font-family: Tahoma; color:#7c1d1d; margin-bottom: 5px; text-align:center; font-size: 40px;">
+      Registration</h1>
+
+
+    <div id="userDetails">
+      <h3 class="form-text-secheader ">User Details</h3>
+      <label class="form-text-label" for="gname">Given name: </label><br>
+      <input class="form-text-input" type="text" id="gname"><br>
+      <label class="form-text-label" for="surname">Surname: </label><br>
+      <input class="form-text-input" type="text" id="surname"><br>
+      <label class="form-text-label" for="username">Username: </label><br>
+      <input class="form-text-input" type="text" id="username"><br>
+      <label class="form-text-label" for="gname">Password: </label><br>
+      <input class="form-text-input" type="text" id="password">
+    </div>
+    <div id="addresses">
+      <h3 class="form-text-secheader ">Addresses</h3>
+      <label class="form-text-label" for="haddress">Home Address: </label><br>
+      <input class="form-text-input" type="text" id="haddress"><br>
+      <label class="form-text-label" for="waddress">Work Address: </label><br>
+      <input class="form-text-input" type="text" id="waddress">
+    </div>
+    <div id="contacts">
+      <h3 class="form-text-secheader ">Contacts</h3>
+      <label class="form-text-label" for="number">Mobile Number: </label><br>
+      <input class="form-text-input" type="text" id="number"><br>
+      <label class="form-text-label" for="email">Email: </label><br>
+      <input class="form-text-input" type="text" id="email">
     </div>
 
-    <div id="modal-grey"></div>
-
-    <div id="bookclubrego" class="custom-background-color">
-      <span class="close-cross" onClick="closeModal()">&times;</span>
-      <h1 style="margin-left: 20px; margin-top: 10px; font-family: Tahoma;">Registration</h1>
-      
-
-      <div id="userDetails">
-        <h3 class="form-text-secheader ">User Details</h3>
-        <label class="form-text-label" for="gname">Given name: </label><br>
-        <input class="form-text-input" type="text" id="gname"><br>
-        <label class="form-text-label" for="surname">Surname: </label><br>
-        <input class="form-text-input" type="text" id="surname"><br>
-        <label class="form-text-label" for="username">Username: </label><br>
-        <input class="form-text-input" type="text" id="username"><br>
-        <label class="form-text-label" for="gname">Password: </label><br>
-        <input class="form-text-input" type="text" id="password">
-      </div>
-      <div id="addresses">
-        <h3 class="form-text-secheader ">Addresses</h3>
-        <label class="form-text-label" for="haddress">Home Address: </label><br>
-        <input class="form-text-input" type="text" id="haddress"><br>
-        <label class="form-text-label" for="waddress">Work Address: </label><br>
-        <input class="form-text-input" type="text" id="waddress">
-      </div>
-      <div id="contacts">
-        <h3 class="form-text-secheader ">Contacts</h3>
-        <label class="form-text-label" for="number">Mobile Number: </label><br>
-        <input class="form-text-input" type="text" id="number"><br>
-        <label class="form-text-label" for="email">Email: </label><br>
-        <input class="form-text-input" type="text" id="email">
-      </div>
-
-      <strong id="submit-button" onClick="closeModal()">Submit</strong>
+    <strong id="submit-button" onClick="closeModal()">Submit</strong>
 
 
-    </div>
+  </div>
 
-   
+  <!-- Info cards at bottom of page -->
+  <div class="wrapper">
+    <div class="content-cards">
 
-
-
-    <div class=" wrapper">
-      <div class="content-cards">
-       
-        <div class="card-item">
-          <div class="custom-background-color card-internal">
+      <div class="card-item">
+        <div class="custom-background-color card-internal">
           <div class="card-title">
-          <strong>News</strong>
-          </div>
-            <div class="card-content-heading"> 
-             Book Fair
-            </div>
-            <div class="card-content-text"> 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-               sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-            <div class="card-content-date">
-              Last updated: 13/4/2021
-            </div>
-        </div>
-        </div>
-
-        <div class="card-item">
-          <div class="custom-background-color card-internal">
-          <div class="card-title">
-          <strong>Books</strong>
+            <strong>News</strong>
           </div>
           <div class="card-content-heading">
-          Old Texts
+            Book Fair
           </div>
           <div class="card-content-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas 
-            ultricies mi eget mauris pharetra et ultrices neque ornare. Vel facilisis volutpat est velit egestas dui id ornare arcu. Gravida cum 
-            sociis natoque penatibus et magnis. Faucibus et molestie ac feugiat sed lectus. Consectetur lorem donec massa sapien faucibus. Mattis 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div class="card-content-date">
+            Last updated: 13/4/2021
+          </div>
+        </div>
+      </div>
+
+      <div class="card-item">
+        <div class="custom-background-color card-internal">
+          <div class="card-title">
+            <strong>Books</strong>
+          </div>
+          <div class="card-content-heading">
+            Old Texts
+          </div>
+          <div class="card-content-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Maecenas
+            ultricies mi eget mauris pharetra et ultrices neque ornare. Vel facilisis volutpat est velit egestas dui id
+            ornare arcu. Gravida cum
+            sociis natoque penatibus et magnis. Faucibus et molestie ac feugiat sed lectus. Consectetur lorem donec
+            massa sapien faucibus. Mattis
             vulputate enim nulla aliquet porttitor lacus luctus.
           </div>
           <div class="card-content-date">
             Last updated: 20/5/2021
           </div>
         </div>
-        </div>
+      </div>
 
-        <div class="card-item">
-          <div class="custom-background-color card-internal">
+      <div class="card-item">
+        <div class="custom-background-color card-internal">
           <div class="card-title">
-          <strong>Get Started</strong>
+            <strong>Get Started</strong>
           </div>
           <div class="card-content-text" style="height: 270px;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus faucibus ornare 
-            suspendisse sed nisi lacus. Purus faucibus ornare suspendisse sed nisi. Nunc congue nisi vitae suscipit tellus mauris a diam. Imperdiet proin 
-            fermentum leo vel orci porta non. Duis ut diam quam nulla porttitor massa. Libero id faucibus nisl tincidunt eget nullam non nisi. Diam maecenas 
-            ultricies mi eget mauris pharetra et. Aliquam ultrices sagittis orci a. A erat nam at lectus urna duis convallis convallis tellus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Purus faucibus ornare
+            suspendisse sed nisi lacus. Purus faucibus ornare suspendisse sed nisi. Nunc congue nisi vitae suscipit
+            tellus mauris a diam. Imperdiet proin
+            fermentum leo vel orci porta non. Duis ut diam quam nulla porttitor massa. Libero id faucibus nisl tincidunt
+            eget nullam non nisi. Diam maecenas
+            ultricies mi eget mauris pharetra et. Aliquam ultrices sagittis orci a. A erat nam at lectus urna duis
+            convallis convallis tellus.
           </div>
         </div>
-        </div>
-
       </div>
-    </div>
 
-    <script type="text/javascript" src="script.js"></script>
-  </body>
-   
+    </div>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
 
 
 

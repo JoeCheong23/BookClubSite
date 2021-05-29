@@ -22,7 +22,7 @@ header {
     margin: 10px; font-weight: bold; font-family: Verdana; color:black; text-decoration: none; word-spacing: 0px; position:relative;
 }
 
-.nav-link-current {
+.nav-link-login {
     margin: 10px; font-weight: bold; font-family: Verdana; color:black; text-decoration: none; word-spacing: 0px; background-color: #7e1b1b; color: white; padding:10px; border-radius: 10px;
 }
 
@@ -55,12 +55,12 @@ header {
 }
 
 #bookclubrego {
-    position: fixed; z-index: 2; padding: 20px;  width: 70%; height: 80%; overflow: auto; left: 15%; top: 10%; ;
-    border-radius: 30px; margin: auto; flex-direction: column; justify-content: space-around; display: none;
+    position: fixed; z-index: 2; padding: 20px;  width: 70%; height: 82%; overflow: auto; left: 15%; right: 15%; top: 10%; ;
+    border-radius: 30px; margin: auto; flex-direction: column; justify-content: space-around; display: none; 
 }
 
 .close-cross {
-    float:right; font-size: 40px; font-weight: bolder; padding-right: 10px; color: grey; 
+    float:right; font-size: 40px; font-weight: bolder; padding-right: 2.5%; color: black; 
 }
 
 .close-cross:hover, .close-cross:focus {
@@ -68,15 +68,15 @@ header {
 }
 
 .form-text-secheader {
- font-family: Verdana;  font-size: 20px; padding-bottom: 5px; 
+ font-family: Tahoma;  font-size: 23px; padding-bottom: 5px; 
 }
 
 .form-text-label {
-    font-family: Verdana; font-weight: bold; margin-left: 3%; margin-right: 3%; font-size: 15px;
+    font-family: Verdana; font-weight: bold; margin-left: 0%; margin-right: 3%; font-size: 15px;
 }
 
 .form-text-input {
-    width: 70%; padding: 4px; margin-left: 3%; margin-right: 3%; margin-top: 5px; font-family: Verdana;  display: inline-block; border: 2px solid #ccc; border-radius: 6px; 
+    width: 90%; padding: 4px; margin-left: 0%; margin-right: 0%; margin-top: 5px; font-family: Verdana;  display: inline-block; border: 2px solid #ccc; border-radius: 6px; background-color: #e4e4e4;
 }
 
 .form-text-input:focus {
@@ -84,20 +84,20 @@ header {
 }
 
 #userDetails {
-    padding: 10px; font-family: Verdana; margin: 10px; flex-direction: column;
+    padding-top: 10px; font-family: Verdana; margin-left: 12.5%; margin-right: 5%; flex-direction: column;
 }
 
 #addresses {
-    padding: 10px; font-family: Verdana; margin: 10px; flex-direction: column;
+    padding-top: 10px;  font-family: Verdana;   margin-left: 12.5%; margin-right: 5%; flex-direction: column;
 }
 
 #contacts {
-    padding: 10px; font-family: Verdana; margin: 10px; flex-direction: column;
+    padding-top: 10px; font-family: Verdana;   margin-left: 12.5%; margin-right: 5%; flex-direction: column;
 }
 
 #submit-button {
-    background-color: #7e1b1b; color: white; border-radius: 10px; font-size: 20px; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px;
-    margin: 10px; font-family: Verdana; cursor: pointer; float: left; 
+    background-color: #7e1b1b; color: white; border-radius: 10px; font-size: 18px; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; 
+    margin: 20px; margin-right:13%; font-family: Verdana; cursor: pointer; float: right; 
 }
 
 .wrapper {
@@ -112,7 +112,7 @@ header {
 }
 
 .content-cards .card-internal {
-    border-radius: 25px; height: auto; padding: 20px; text-align: center; box-shadow: 10px 10px 5px grey; position:relative; 
+    border-radius: 25px; height: auto; padding: 20px; text-align: center; box-shadow: 10px 10px 5px rgb(105, 105, 105); position:relative; 
 }
 
 .content-cards .card-internal .card-title {
