@@ -26,12 +26,13 @@
     </div>
   </header>
 
-  <!-- Call to action section and registration form button -->
+  <!-- Call to action section -->
   <div id="sign-up">
     <h1 id="sign-up-header" class="custom-color">Reading is better together</h1>
     <strong id="trigger-modal" onclick="triggerModal()">Join us today</strong>
   </div>
 
+  <!-- Registration modal and grey background -->
   <div id="modal-grey"></div>
 
   <div id="bookclubrego" class="custom-background-color">
@@ -40,7 +41,7 @@
       style="margin-top: 10px; font-family: Tahoma; color:#7c1d1d; margin-bottom: 5px; text-align:center; font-size: 40px;">
       Registration</h1>
 
-
+    <form>
     <div id="userDetails">
       <h3 class="form-text-secheader ">User Details</h3>
       <label class="form-text-label" for="gname">Given name: </label><br>
@@ -54,10 +55,10 @@
     </div>
     <div id="addresses">
       <h3 class="form-text-secheader ">Addresses</h3>
-      <label class="form-text-label" for="haddress">Home Address: </label><br>
-      <input class="form-text-input" type="text" id="haddress"><br>
-      <label class="form-text-label" for="waddress">Work Address: </label><br>
-      <input class="form-text-input" type="text" id="waddress">
+      <label class="form-text-label" for="home-address">Home Address: </label><br>
+      <input class="form-text-input" type="text" id="home-address"><br>
+      <label class="form-text-label" for="work-address">Work Address: </label><br>
+      <input class="form-text-input" type="text" id="work-address">
     </div>
     <div id="contacts">
       <h3 class="form-text-secheader ">Contacts</h3>
@@ -67,8 +68,8 @@
       <input class="form-text-input" type="text" id="email">
     </div>
 
-    <strong id="submit-button" onClick="closeModal()">Submit</strong>
-
+    <input type="submit" id="submit-button" onClick="closeModal()" value="Submit">
+    </form>
 
   </div>
 
