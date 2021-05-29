@@ -43,7 +43,7 @@ header {
 }
 
 #sign-up-header {
-    padding-top: 150px; padding-bottom: 100px; background-size: cover; font-size: 100px; font-family: Verdana;
+    padding-top: 150px; padding-bottom: 100px; background-size: cover; font-size: 100px; font-family: Tahoma;
 }
 
 #trigger-modal {
@@ -68,7 +68,7 @@ header {
 }
 
 .form-text-secheader {
- font-family: Verdana;  font-size: 20px; padding-bottom: 5px;
+ font-family: Verdana;  font-size: 20px; padding-bottom: 5px; 
 }
 
 .form-text-label {
@@ -116,7 +116,7 @@ header {
 }
 
 .content-cards .card-internal .card-title {
-    font-size: 35px; font-family: Tahoma; margin-bottom: 30px; color: #7e1b1b; cursor: pointer;
+    font-size: 35px; font-family: Tahoma; margin-bottom: 15px; color: #7e1b1b; cursor: pointer;
 }
 
 .content-cards .card-internal .card-content-heading {
