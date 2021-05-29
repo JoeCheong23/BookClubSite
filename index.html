@@ -5,7 +5,7 @@
   <head>
     <title>Book Program Discussion (BPD)</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="script.js"></script>
+    
   </head>
 
 
@@ -29,13 +29,13 @@
     <!-- Call to action section and registration form button -->
     <div id="sign-up">
       <h1 id="sign-up-header" class="custom-color">Reading is better together</h1>
-      <strong id="trigger-modal" onclick='console.log("clicked")' >Join us today</strong>
+      <strong id="trigger-modal" onclick="triggerModal()" >Join us today</strong>
     </div>
 
     <div id="modal-grey"></div>
 
     <div id="bookclubrego" class="custom-background-color">
-      <span class="close-cross">&times;</span>
+      <span class="close-cross" onClick="closeModal()">&times;</span>
       <h1 style="margin-left: 20px; margin-top: 10px; font-family: Tahoma;">Registration</h1>
       
 
@@ -67,7 +67,7 @@
         <input class="form-text-input" type="text" id="email">
       </div>
 
-      <strong id="submit-button">Submit</strong>
+      <strong id="submit-button" onClick="closeModal()">Submit</strong>
 
 
     </div>
@@ -135,6 +135,8 @@
 
       </div>
     </div>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
    
 
