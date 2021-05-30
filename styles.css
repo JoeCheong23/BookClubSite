@@ -55,7 +55,7 @@ header {
 }
 
 #bookclubrego {
-    position: fixed; z-index: 2; padding: 20px;  width: 70%; height: 82%; overflow: auto; left: 15%; right: 15%; top: 10%; ;
+    position: fixed; z-index: 2; padding: 20px;  width: 70%; height: 82%; overflow: auto; left: 15%; right: 15%; top: 10%; bottom: 10%; 
     border-radius: 30px; margin: auto; flex-direction: column; justify-content: space-around; display: none; 
 }
 
@@ -97,7 +97,7 @@ header {
 
 #submit-button {
     background-color: #7e1b1b; color: white; border-radius: 10px; font-size: 18px; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; 
-    margin: 20px; margin-right:13.5%; font-family: Verdana; cursor: pointer; float: right; 
+    margin: 20px; margin-right:13.5%; font-family: Verdana; cursor: pointer; float: right; display: block;
 }
 
 .wrapper {
